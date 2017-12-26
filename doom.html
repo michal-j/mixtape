@@ -4,9 +4,8 @@
 <head>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet" type='text/css'>
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/mediaelement/build/mediaelement-and-player.min.js"></script>
     <title>The Mixtape - Doom, rock and and everything in between</title>
+    <link rel="stylesheet" href="mediaelement/src/css/mediaelementplayer.css">
     <style type="text/css">
         body {
             color: #999;
@@ -54,7 +53,7 @@
         }
 
         .track::before {
-	        counter-increment: track-counter;
+            counter-increment: track-counter;
             content: counter(track-counter);
             position: absolute;
             top: -14px;
@@ -168,6 +167,8 @@
         <div class="track"></div>
         <div class="track"></div>
     </div>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="mediaelement/build/mediaelement-and-player.min.js"></script>
 </body>
 
 </html>
