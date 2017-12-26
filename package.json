@@ -3,44 +3,33 @@
   "lockfileVersion": 1,
   "dependencies": {
     "dom-walk": {
-      "version": "0.1.1",
+      "integrity": "sha1-ZyIm3HTI95mtNTB9+TaroRrNYBg=",
       "resolved": "https://registry.npmjs.org/dom-walk/-/dom-walk-0.1.1.tgz",
-      "integrity": "sha1-ZyIm3HTI95mtNTB9+TaroRrNYBg="
+      "version": "0.1.1"
     },
     "global": {
-      "version": "4.3.2",
-      "resolved": "https://registry.npmjs.org/global/-/global-4.3.2.tgz",
       "integrity": "sha1-52mJJopsdMOJCLEwWxD8DjlOnQ8=",
       "requires": {
         "min-document": "2.19.0",
         "process": "0.5.2"
-      }
+      },
+      "resolved": "https://registry.npmjs.org/global/-/global-4.3.2.tgz",
+      "version": "4.3.2"
     },
-    "jquery": {
-      "version": "3.2.1",
-      "resolved": "https://registry.npmjs.org/jquery/-/jquery-3.2.1.tgz",
-      "integrity": "sha1-XE2d5lKvbNCncBVKYxu6ErAVx4c="
-    },
-    "mediaelement": {
-      "version": "4.2.7",
-      "resolved": "https://registry.npmjs.org/mediaelement/-/mediaelement-4.2.7.tgz",
-      "integrity": "sha512-u4KSYg3d+PNLbGcDFXLLrmnv6Kft+cs0RwNRtx700AkwxjjDiFLPJFHhLO1Zik4P42tyOr500NfR4IaWkkHR1Q==",
-      "requires": {
-        "global": "4.3.2"
-      }
-    },
+    "jquery": "^3.2.1",
+    "mediaelement": "file:mediaelement",
     "min-document": {
-      "version": "2.19.0",
-      "resolved": "https://registry.npmjs.org/min-document/-/min-document-2.19.0.tgz",
       "integrity": "sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=",
       "requires": {
         "dom-walk": "0.1.1"
-      }
+      },
+      "resolved": "https://registry.npmjs.org/min-document/-/min-document-2.19.0.tgz",
+      "version": "2.19.0"
     },
     "process": {
-      "version": "0.5.2",
+      "integrity": "sha1-FjjYqONML0QKkduVq5rrZ3/Bhc8=",
       "resolved": "https://registry.npmjs.org/process/-/process-0.5.2.tgz",
-      "integrity": "sha1-FjjYqONML0QKkduVq5rrZ3/Bhc8="
+      "version": "0.5.2"
     }
   }
 }
