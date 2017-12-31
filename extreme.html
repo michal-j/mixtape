@@ -14,6 +14,7 @@
             background: rgb(26, 26, 26);
             font-family: Oswald, sans-serif;
             font-size: 14px;
+            padding-bottom: 100px;
             /* background: -moz-radial-gradient(center, ellipse cover, #4a148c 0%, #12005e 100%); */
             /* FF3.6-15 */
             /* background: -webkit-radial-gradient(center, ellipse cover, #4a148c 0%, #12005e 100%); */
@@ -47,7 +48,7 @@
             box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
             background: rgba(255, 255, 255, 0.075);
             display: inline-block;
-            margin: 15px;
+            margin: 30px 15px;
             width: 200px;
             height: 200px;
             position: relative;
@@ -75,6 +76,9 @@
         }
 
         .audio-holder {
+            position: absolute;
+            top: 100%;
+            left: 0;
             /* width: 100%; */
             /* left: 50%; */
             /* top: 0; */
@@ -84,12 +88,12 @@
         audio {
             padding: 0 10px 10px 0;
             position: absolute;
-            right: 0;
-            bottom: 0;
+            top: 0;
+            left: 0;
             /* right: 0; */
             /* bottom: 0; */
             /* transform: translate(-50%, -50%); */
-            width: 70px;
+            width: 200px;
             z-index: 10;
         }
 
@@ -108,22 +112,24 @@
 
         .info-inner {
             position: absolute;
-            left: 50%;
-            bottom: 10px;
-            transform: translateX(-50%);
-            width: 100%;
+            left: 0;
+            /* left: 50%; */
+            bottom: 0;
+            /* transform: translateX(-50%); */
+            padding: 10px;
+            /* width: 100%; */
         }
 
         .song-name,
         .band {
             display: block;
-            padding-left: 10px;
             /* text-align: center; */
             vertical-align: bottom;
         }
 
         .song-name {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 20px;
             /* margin-bottom: 5px; */
         }
 
@@ -140,7 +146,7 @@
             More extreme metal tracks
         </h1>
         <!-- <audio class="mejs__player">
-            <source src="songs/instrumental/01.mp3" type="audio/mpeg">
+            <source src="songs/extreme/01.mp3" type="audio/mpeg">
         </audio> -->
     </div>
     <div class="tracklist">
@@ -150,7 +156,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/d-sstcd.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/d-sstcd.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -166,7 +172,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/d-td.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/d-td.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -182,7 +188,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/g-pbs.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/g-pbs.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -198,7 +204,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/n-pe.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/n-pe.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -214,7 +220,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/o-ii.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/o-ii.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -230,7 +236,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/jd-p.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/jp-p.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -246,7 +252,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/mw-taop.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/mw-taop.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -262,7 +268,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/gb-sr.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/gb-sr.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -278,7 +284,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/cc-m.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/cc-m.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -294,7 +300,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/kd-a.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/kd-a.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -310,7 +316,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/m-hb.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/m-hb.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -326,7 +332,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/m-dmds.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/m-dmds.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -342,7 +348,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/d-zr.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/d-zr.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -358,7 +364,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/fm-atq.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/fm-atq.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -374,7 +380,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/w-s.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/w-s.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -390,7 +396,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/k-od.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/k-od.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -406,7 +412,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/d666-cs.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/d666-cs.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -422,7 +428,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/n-sb.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/n-sb.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -438,7 +444,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/e-iatbw.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/e-iatbw.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -454,7 +460,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/o-kap.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/o-kap.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -470,7 +476,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/ea-ssk.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/ea-ssk.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">
@@ -486,7 +492,7 @@
             </div>
             <div class="audio-holder">
                 <audio controls>
-                    <source src="songs/instrumental/m-ao.mp3" type="audio/mpeg">
+                    <source src="songs/extreme/m-ao.mp3" type="audio/mpeg">
                 </audio>
             </div>
             <div class="info">

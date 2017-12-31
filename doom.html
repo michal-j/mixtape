@@ -14,6 +14,7 @@
             background: rgb(26, 26, 26);
             font-family: Oswald, sans-serif;
             font-size: 14px;
+            padding-bottom: 100px;
             /* background: -moz-radial-gradient(center, ellipse cover, #4a148c 0%, #12005e 100%); */
             /* FF3.6-15 */
             /* background: -webkit-radial-gradient(center, ellipse cover, #4a148c 0%, #12005e 100%); */
@@ -47,7 +48,7 @@
             box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
             background: rgba(255, 255, 255, 0.075);
             display: inline-block;
-            margin: 15px;
+            margin: 30px 15px;
             width: 200px;
             height: 200px;
             position: relative;
@@ -75,6 +76,9 @@
         }
 
         .audio-holder {
+            position: absolute;
+            top: 100%;
+            left: 0;
             /* width: 100%; */
             /* left: 50%; */
             /* top: 0; */
@@ -84,12 +88,12 @@
         audio {
             padding: 0 10px 10px 0;
             position: absolute;
-            right: 0;
-            bottom: 0;
+            top: 0;
+            left: 0;
             /* right: 0; */
             /* bottom: 0; */
             /* transform: translate(-50%, -50%); */
-            width: 70px;
+            width: 200px;
             z-index: 10;
         }
 
@@ -108,22 +112,24 @@
 
         .info-inner {
             position: absolute;
-            left: 50%;
-            bottom: 10px;
-            transform: translateX(-50%);
-            width: 100%;
+            left: 0;
+            /* left: 50%; */
+            bottom: 0;
+            /* transform: translateX(-50%); */
+            padding: 10px;
+            /* width: 100%; */
         }
 
         .song-name,
         .band {
             display: block;
-            padding-left: 10px;
             /* text-align: center; */
             vertical-align: bottom;
         }
 
         .song-name {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 20px;
             /* margin-bottom: 5px; */
         }
 
