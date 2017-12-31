@@ -1,0 +1,109 @@
+body {
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 150px 0;
+    text-align: center;
+}
+
+.content-holder {
+    color: #999;
+    counter-reset: track-counter;
+    background: rgb(26, 26, 26);
+}
+
+.tracklist {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    padding: 50px 0;
+}
+
+.track {
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.075);
+    display: inline-block;
+    margin: 30px 15px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.track::before {
+    counter-increment: track-counter;
+    content: counter(track-counter);
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #444;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bg img {
+    width: 200px;
+    height: 200px;
+}
+
+.audio-holder {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.audio-default {
+    padding: 0 10px 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 10;
+}
+
+.info {
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+}
+
+.info-inner {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.song-name,
+.band {
+    display: block;
+    vertical-align: bottom;
+}
+
+.song-name {
+    font-size: 1.1em;
+    line-height: 20px;
+}
+
+.band {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}

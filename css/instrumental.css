@@ -1,0 +1,45 @@
+.content-holder.instrumental {
+    background: #fff;
+    color: #333;
+    font-family: "EB Garamond", sans-serif;
+    font-size: 16px;
+}
+
+.instrumental ol {
+    font-family: "Georgia", sans-serif;
+}
+
+.instrumental li {
+    padding: 4px;
+}
+
+.inst-tracklist {
+    margin: auto;
+    width: 580px;
+}
+
+.audio-small {
+    display: inline;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.inst-track {
+    color: #888888;
+    font-family: "EB Garamond";
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+
+.inst-by {
+    font-size: 0.7em;
+    font-family: "Oswald";
+    padding-right: 5px;
+}
+
+.inst-band {
+    font-family: "Oswald";
+    font-size: 0.9em;
+    text-transform: uppercase;
+}

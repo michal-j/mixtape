@@ -4,67 +4,1001 @@
 <head>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <link rel="stylesheet" type="text/css" href="css/instrumental.css">
     <title>The Mixtape</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <style type="text/css">
-        .accordion {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-        }
-
-        .active,
-        .accordion:hover {
-            background-color: #ccc;
-        }
-
-        .accordion:after {
-            content: '\002B';
-            color: #777;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
-
-        .active:after {
-            content: "\2212";
-        }
-
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-    </style>
+    <!-- <style type="text/css">
+        
+    </style> -->
 </head>
 
 <body>
-    <button class="accordion">Section 1</button>
-    <div class="panel">
-        <p>Lorem ipsum...</p>
+    <h1>
+        The Mixtape
+    </h1>
+
+    <button class="accordion">Instru-metal</button>
+    <div class="content-holder panel instrumental">
+        <div class="inst-tracklist">
+            <ol>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/01.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Silvester Anfang</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Mayhem</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/02.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Swamp that Shame</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Glorior Belli</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/03.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Zog</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Candlemass</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/04.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Pre-Game</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Municipal Waste</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/05.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">The Hills Have Eyes</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Electric Wizard</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/06.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Intro</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Tormentor</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/07.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Cosmic Sea</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Death</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/08.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Rat Salad</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Black Sabbath</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/09.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Mountains of Mars</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Electric Wizard</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/10.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Into the Unfathomed Tower</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Candlemass</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/11.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Rapture of the Empty Spaces</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Karl Sanders</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/12.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Naar Himmelen Klarner</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Burzum</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/13.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Sting of the Bumblebee</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Manowar</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/14.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Lawless Darkness</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Watain</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/15.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Transcendental Requiem of Slaves</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Satyricon</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/16.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Awaiting the Vultures</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Karl Sanders</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/17.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Invocation of the Storms</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Damnation</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/18.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Grindhouse (Main Titles)</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Robert Rodriguez</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/19.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Kudurru Maqlu</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Nile</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/20.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Coven of Darkness</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Nocturnal</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/21.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">A.M.S.G.</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Enthroned</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/22.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Echoes from the Past</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Marduk</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/23.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Intro</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Toxic Holocaust</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/24.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Embryo</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Black Sabbath</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/25.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">The Wanderer</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Emperor</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/26.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Nexion 218</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Dissection</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/27.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">The Scribes of Kur</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Melechesh</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/28.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Arc-Lite</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Coroner</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/29.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Black Candles</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Candlemass</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/30.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">The Saw, the Torture, the Pain</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Asphyx</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/31.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Final Ceremony</span>
+                    <span class="inst-by">by</span>
+                    <span class="inst-band">Slugathor</span>
+                </li>
+                <li>
+                    <audio controls class="audio-small">
+                        <source src="songs/instrumental/32.mp3" type="audio/mpeg">
+                    </audio>
+                    <span class="inst-track">Bonus Song</span>
+                </li>
+            </ol>
+        </div>
     </div>
 
-    <button class="accordion">Section 2</button>
-    <div class="panel">
-        <p>Lorem ipsum...</p>
+    <button class="accordion">Thrash, black, death and the like</button>
+    <div class="content-holder panel">
+        <div class="tracklist">
+            <div class="track">
+                <div class="bg">
+                    <img src="images/d-l.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/d-sstcd.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Satan Spawn, The Caco-Daemon</span>
+                        <span class="band">Deicide</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/d-sod.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/d-td.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Total Desaster</span>
+                        <span class="band">Destruction</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/g-a.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/g-pbs.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Possessed by Satan</span>
+                        <span class="band">Gorgoroth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/n-tdaot.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/n-pe.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Parasite Eve</span>
+                        <span class="band">Necrophagia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/o-dsmd.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/o-ii.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">II</span>
+                        <span class="band">Ondskapt</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/jp-p.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/jp-p.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Painkiller</span>
+                        <span class="band">Judas Priest</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/mw-taop.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/mw-taop.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">The Art of Partying</span>
+                        <span class="band">Municipal Waste</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/gb-mtrb.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/gb-sr.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Sinister Resonance</span>
+                        <span class="band">Glorior Belli</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/cc-ebtl.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/cc-m.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Mangled</span>
+                        <span class="band">Cannibal Corpse</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/kd-a.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/kd-a.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Abigail</span>
+                        <span class="band">King Diamond</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/m-h.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/m-hb.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Honey Bucket</span>
+                        <span class="band">Melvins</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/m-dmds.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/m-dmds.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">De Mysteriis Dom Sathanas</span>
+                        <span class="band">Mayhem</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/d-sbg.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/d-zr.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Zombie Ritual</span>
+                        <span class="band">Death</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/fm-s.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/fm-atq.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Across the Qliphoth</span>
+                        <span class="band">Funeral Mist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/w-sttd.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/w-s.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Stellarvore</span>
+                        <span class="band">Watain</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/k-t.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/k-od.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Onward Destrudo</span>
+                        <span class="band">Kriegsmaschine</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/d666-csfaia.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/d666-cs.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Cold Steel</span>
+                        <span class="band">Destroyer 666</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/n-sod.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/n-sb.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Sadistic Bloodmassacre</span>
+                        <span class="band">Nifelheim</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/e-itne.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/e-iatbw.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">I am the Black Wizards</span>
+                        <span class="band">Emperor</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/o-mta.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/o-kap.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Khabs Am Pekht</span>
+                        <span class="band">Ofermod</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/ea-ea.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/ea-ssk.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Sgt. Says Kill</span>
+                        <span class="band">Evil Army</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/m-r512.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/extreme/m-ao.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Accuser/Opposer</span>
+                        <span class="band">Marduk</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <button class="accordion">Section 3</button>
-    <div class="panel">
-        <p>Lorem ipsum...</p>
+    <button class="accordion">Doom, rock and and everything in between</button>
+    <div class="content-holder panel">
+        <div class="tracklist">
+            <div class="track">
+                <div class="bg">
+                    <img src="images/c-n.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/c-twos.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">The Well of Souls</span>
+                        <span class="band">Candlemass</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/jt-jt.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/jt-tb.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">The Banishment</span>
+                        <span class="band">Jex Thoth</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/w-w.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/w-w.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Witchcraft</span>
+                        <span class="band">Witchcraft</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/ew-wt.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/ew-d.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Dunwich</span>
+                        <span class="band">Electric Wizard</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/twk-itcotbh.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/twk-goo.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Gates of Oblivion</span>
+                        <span class="band">The Wounded Kings</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/c-dg.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/c-soyl.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Sunshine of your Love</span>
+                        <span class="band">Cream</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/o-ttdd.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/o-its.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Into the Sun</span>
+                        <span class="band">Orchid</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/c-wdmrs.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/c-bs.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Black Sabbath</span>
+                        <span class="band">Coven</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/ts-hats.png" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/ts-tw.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">The Witch</span>
+                        <span class="band">The Sonics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/w-s.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/w-o.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Orchard</span>
+                        <span class="band">Windhand</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/p-bf.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/p-p.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Petrified</span>
+                        <span class="band">Pentagram</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/d-iii.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/d-hotd.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Heart of the Devil</span>
+                        <span class="band">Danzig</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/t-s.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/t-s.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Shatter</span>
+                        <span class="band">Triptykon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/ua-bl.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/ua-rk.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Ritual Knife</span>
+                        <span class="band">Uncle Acid and the Deadbeats</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/tdb-tgs.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/tdb-tgs.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">The Graveyard Shuffle</span>
+                        <span class="band">The Devil's Blood</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/w-p.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/w-otl.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Old Trap Line</span>
+                        <span class="band">Witch</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/ja-sp.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/ja-wr.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">White Rabbit</span>
+                        <span class="band">Jefferson Airplane</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/am-fwn.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/am-thiac.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">This House is a Circus</span>
+                        <span class="band">Arctic Monkeys</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/ss-ds.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/ss-bs.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Black Souls</span>
+                        <span class="band">Satan's Satyrs</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/w-ctb.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/w-tmar.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">To Make a Ring</span>
+                        <span class="band">Wovenhand</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/sa-btch.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/sa-sotd.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">Seeds of the Desolate</span>
+                        <span class="band">Solitude Aeturnus</span>
+                    </div>
+                </div>
+            </div>
+            <div class="track">
+                <div class="bg">
+                    <img src="images/sa-rto.jpg" />
+                </div>
+                <div class="audio-holder">
+                    <audio controls class="audio-default">
+                        <source src="songs/doom/sa-tssite.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div class="info">
+                    <div class="info-inner">
+                        <span class="song-name">The Saints Shall Inherit the Earth</span>
+                        <span class="band">Sabbath Assembly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="scripts/main.js"></script>
-    
+
 </body>
 
 </html>

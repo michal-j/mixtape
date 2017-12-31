@@ -1,0 +1,36 @@
+.accordion {
+    background-color: #eee;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    outline: none;
+    padding: 18px;
+    text-align: center;
+    transition: 0.4s;
+    width: 100%;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
