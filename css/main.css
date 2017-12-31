@@ -4,10 +4,19 @@ body {
     margin: 0;
 }
 
-h1 {
+/* h1 {
     font-size: 3em;
     margin: 150px 0;
     text-align: center;
+} */
+
+.header {
+    margin: 120px 0;
+    text-align: center;
+}
+
+.header img {
+    width: 350px;
 }
 
 .content-holder {
